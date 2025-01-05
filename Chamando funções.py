@@ -15,8 +15,4 @@ def print_verse():
     last_three_lines()
 
 
-for i in range(2):
-    print("Verse", i)
-    print_verse()
-    print()
 
