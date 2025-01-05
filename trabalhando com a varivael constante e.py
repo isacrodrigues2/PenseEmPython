@@ -8,6 +8,7 @@ print(segundo_resultado)
 #Utilizando math.exp
 terceiro_resultado= math.exp(2)
 print(terceiro_resultado)
+input()
 
 
 
