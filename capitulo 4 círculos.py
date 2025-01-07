@@ -24,7 +24,7 @@ def polyline(n, length, angle):
     for i in range(n):
         forward(length)
         left(angle)
-
+        make_turtle()
 
 
 def polygon (n,length):
