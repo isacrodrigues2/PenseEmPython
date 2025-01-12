@@ -1,6 +1,7 @@
 import math
 
 import turtle
+
 def jump(length):
     turtle.penup()
     turtle.forward(length)
@@ -16,20 +17,22 @@ def triangle(radius, angle):
     turtle.forward(radius)
     turtle.left(180 - angle)
 
-#triangle(50,60)
-
 def draw_pie (n , radius):
     angle = 360 / n
     for i in range (n):
         triangle(radius, angle/2)
         turtle.left(angle)
 
-
+# Criando o desenho com Turtle
+screen = turtle.Screen()
 jump(-80)
-
-size = 40
+size = 50
 draw_pie(5, size)
 jump(2*size)
 draw_pie(6, size)
 jump(2*size)
 draw_pie(7, size)
+
+# Salvando como PostScript
+ps_file = "drawing.ps"
+screen.getcanvas().postscript(file=ps_file)
