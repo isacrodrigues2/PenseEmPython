@@ -10,13 +10,12 @@ minutes = remainder // 60
 seconds = minutes % 60
 print(f'{days} dias, {hours} horas, {minutes} minutos e {seconds} segundos')
 '''
-def is_triangle(a,b,c):
-    if a > (b + c):
-        print('não é um triángulo')
-    elif b > (a + c ):
-        print('não é um triángulo')
-    elif c > (a + b ):
-        print('não é um triángulo')
+
+'''exemplo de recursividade'''
+def recurse(n,s):
+    if n == 0:
+        print(s)
     else:
-        print('parabéns voce tem um triângulo')
-is_triangle(20 , 5, 8)
+        recurse(n-1, n+s)
+
+recurse (3,0)
