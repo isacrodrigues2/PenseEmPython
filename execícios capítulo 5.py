@@ -11,11 +11,11 @@ seconds = minutes % 60
 print(f'{days} dias, {hours} horas, {minutes} minutos e {seconds} segundos')
 '''
 
-'''exemplo de recursividade'''
+'''exemplo de recursividade
 def recurse(n,s):
     if n == 0:
         print(s)
     else:
         recurse(n-1, n+s)
 
-recurse (3,0)
+recurse (3,0)'''
