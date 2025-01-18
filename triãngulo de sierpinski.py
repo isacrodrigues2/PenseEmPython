@@ -37,5 +37,5 @@ turtle.pendown()
 
 # Desenha o Triângulo de Sierpinski
 side_length = 200  # Tamanho do lado inicial
-recursion_depth = 4  # Profundidade da recursão
+recursion_depth =1  # Profundidade da recursão
 sierpinski(turtle, side_length, recursion_depth)
