@@ -8,21 +8,6 @@ def run_doctests(func):
         func (callable): Função a ser testada.
     """
     run_docstring_examples(func, globals(), func.__name__)
-def uses_any(word, letters):
-        """
-           Verifica se uma palavra utiliza qualquer letra da string fornecida.
-
-           Args:
-               word (str): Palavra a ser analisada.
-               letters (str): String contendo as letras a verificar.
-
-           Returns:
-               bool: True se a palavra usar qualquer letra da string, False caso contrário.
-           """
-        for letter in word.lower():
-            if letter in letters.lower():
-                return True
-        return False
 
 def uses_all(word, required):
     """checa se utiliza todas as letras requiridas
@@ -33,14 +18,6 @@ def uses_all(word, required):
             return False
     return True
 
-def uses_only(word, avaible):
-        """Recebe uma palavra e uma string de letras e retorna True se a palavra contiver
-        apenas letras presentes na string
-        """
-        for letter in word.lower():
-            if letter not in avaible.lower():
-                return False
-            return True
 def word_score(word, available):
     """Calcula a pontuação de uma palavra válida
     >>> word_score('card','ACDLORT')
