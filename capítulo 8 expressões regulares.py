@@ -9,7 +9,8 @@ print('*=' * 8)
 #Se o padrão for encontrado no texto, a função search retorna um objeto match
 #que contém os resultados da busca
 #Entre outras informações, o objeto tem uma variável chamda string, que contém o texto que foi pesquisado
-print(result.string)
+
+
 print('*=' * 8)
 #Também fornece uma função chamada group, que retorna a a parte do texto que correspondeu ao padrão
 print(result.group())
